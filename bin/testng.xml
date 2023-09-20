@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Amazon Automation Suite">
+    <test verbose="2" preserve-order="true" name="Amazon Test Suite">
+        <classes>
+            <class name="test.AmazonTestCases">
+                <methods>
+                    <include name="setupTest()"/>
+                    <include name="testAssert"/>
+                    <include name="testHomepage()"/>
+                    <include name="quitBrowser()"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
